@@ -8,25 +8,27 @@
 
 html {
     /* // This defines what 1rem is */
-    font-size: 62.5%; 
+    font-size: 62.5%;
     /* //1 rem = 10px; 10px/16px = 62.5% */
 }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem;
-  font-family: sans-serif;
-  font-size: 1.7rem;
+    box-sizing: border-box;
+    padding: 3rem;
+    font-family: sans-serif;
+    font-size: 1.7rem;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  /* max-width: 1200px; */
-  padding: 1.5rem 3rem;
-  background-color: orangered;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    padding: 1.5rem 3rem;
+    background-color: orangered;
+    margin-bottom: 1rem;
 }
 
-
-
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
