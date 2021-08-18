@@ -1,21 +1,26 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { Route, Switch, withRouter, Link } from "react-router-dom"
+import Computers from "./Containers/Computers/Computers"
+import Computer from "./Containers/Computer/Computer"
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+const App = () => {
+  let routes = (
+    <Switch>
+      <Route path="/" exact component={Computers} />
+      <Route path="/computer" exact component={Computer} />
+    </Switch>
+  )
+  return (
+    <>
+      <div className="header">
+        <div><Link to="/">Computers</Link></div>
+        <div>
+          <Link to="/computer">Add a computer</Link></div>
       </div>
-    );
-  }
+      {routes}
+    </>
+  )
 }
 
-export default App;
+export default withRouter(App);

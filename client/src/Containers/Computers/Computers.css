@@ -1,0 +1,21 @@
+/* .computerTable {
+    color: orangered;
+} */
+
+.computerTable * {
+    padding: .5rem 1rem;
+}
+
+.computerTable thead {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+.computerTable tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.computerTable tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
