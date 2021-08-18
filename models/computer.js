@@ -9,6 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         operating_system: DataTypes.STRING,
         ms_office: DataTypes.STRING,
         adobe: DataTypes.STRING,
+        notes: DataTypes.STRING
     })
     return Computer;
 }
