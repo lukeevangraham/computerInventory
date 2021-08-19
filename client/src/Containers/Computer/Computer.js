@@ -13,6 +13,7 @@ const Computer = (props) => {
     let [operatingSystem, setoperatingSystem] = useState("")
     let [msOffice, setMsOffice] = useState("")
     let [adobe, setAdobe] = useState("")
+    let [note, setNote] = useState("")
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -26,6 +27,7 @@ const Computer = (props) => {
             operating_system: operatingSystem,
             ms_office: msOffice,
             adobe: adobe,
+            note: note
         }
         axios.post("/api/computer", computerObject)
     }
@@ -86,6 +88,12 @@ const Computer = (props) => {
                     <label htmlFor="adobe">adobe</label>
                     <input type="text" id="adobe" value={adobe} onChange={(e) => {
                         setAdobe(e.target.value)
+                    }} />
+                </div>
+                <div className="form-control">
+                    <label htmlFor="note">note</label>
+                    <input type="text" id="note" value={note} onChange={(e) => {
+                        setNote(e.target.value)
                     }} />
                 </div>
                 <div className="formActions">

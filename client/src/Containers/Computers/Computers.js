@@ -31,6 +31,7 @@ const Computers = () => {
                         <th>OS</th>
                         <th>MS Office</th>
                         <th>Adobe</th>
+                        <th>Note</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,6 +46,7 @@ const Computers = () => {
                             <td>{computer.operating_system}</td>
                             <td>{computer.ms_office}</td>
                             <td>{computer.adobe}</td>
+                            <td>{computer.note}</td>
                         </tr>
                     )) : null}
                 </tbody>
